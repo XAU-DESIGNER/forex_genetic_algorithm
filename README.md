@@ -3,7 +3,9 @@
 ## strategy optimizer
 > The strategies are based on the EMA crossover indicator because I wanted to keep things simple. My goal is to implement a genetic algorithm, not to build a real-world trading product. So, I hope you enjoy it, because I've really loved learning about this algorithm. It makes me feel like a real biologist, LOL!
 
-#### STILL IN PROGRESS (I'm learning about it before I start coding)
+<img width="763" height="380" alt="Screenshot From 2026-10-29 20-38-09" src="https://github.com/user-attachments/assets/d11e4324-4b4b-40ee-97d7-7b7571fa598d" />
+
+#### THIS PROJECT IS NOT A PRODUCT. IT IS FOR LEARNING PURPOSES ONLY
 
 My first genetic algorithm implementation
 PnL is realized (Commission & SWAP)
