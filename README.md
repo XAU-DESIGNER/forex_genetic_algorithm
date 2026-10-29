@@ -29,15 +29,15 @@ Thanks for visiting this repository.
 I hope you found something useful here.
 
 @XAU-DESIGNER
-.
-.
-.
-.
+</br>.
+</br>.
+</br>.
+</br>.
 <img width="763" height="380" alt="Screenshot From 2026-10-29 20-38-09" src="https://github.com/user-attachments/assets/d11e4324-4b4b-40ee-97d7-7b7571fa598d" />
-.
-.
-.
-.
+</br>.
+</br>.
+</br>.
+</br>.
 <div align=center>
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/XAU-DESIGNER/forex_genetic_algorithm?style=for-the-badge&labelColor=101418&color=9ccbfb)
