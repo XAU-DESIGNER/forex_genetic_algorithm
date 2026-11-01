@@ -1,5 +1,5 @@
 # Forex genetic algorithm (strategy optimization)
-
+## STILL IN PROGRESS
 problem: find best parameters
 goal: repeat 5 times, return strategy with best score
 other:
