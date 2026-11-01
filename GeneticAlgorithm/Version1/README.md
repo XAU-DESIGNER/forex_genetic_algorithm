@@ -1,5 +1,5 @@
 # Forex genetic algorithm
-
+> this is my first ga implemetation so its very simple and maybe wrong!
 ## strategy optimizer
 > The strategies are based on the EMA crossover indicator because I wanted to keep things simple. My goal is to implement a genetic algorithm, not to build a real-world trading product. So, I hope you enjoy it, because I've really loved learning about this algorithm. It makes me feel like a real biologist, LOL!
 

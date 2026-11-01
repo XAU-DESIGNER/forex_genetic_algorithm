@@ -1,4 +1,4 @@
-from Models import StrategyGenome, Strategy
+from GeneticAlgorithm.Version1.Models import StrategyGenome, Strategy
 
 class FitnessEvaluator:
     def __init__(self , max_drawdown: float = 5.0, max_losing_streak: int = 8):

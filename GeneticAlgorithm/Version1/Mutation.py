@@ -1,6 +1,6 @@
 import random
 
-from Models import StrategyGenome
+from GeneticAlgorithm.Version1.Models import StrategyGenome
 
 
 class Mutation:

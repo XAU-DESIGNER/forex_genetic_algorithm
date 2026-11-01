@@ -1,7 +1,7 @@
 import random
 
-from Models import StrategyGenome, Strategy
-from FitnessEvaluator import FitnessEvaluator
+from GeneticAlgorithm.Version1.Models import StrategyGenome, Strategy
+from GeneticAlgorithm.Version1.FitnessEvaluator import FitnessEvaluator
 
 
 class PopulationInitializer:

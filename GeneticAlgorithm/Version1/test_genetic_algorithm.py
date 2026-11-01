@@ -1,10 +1,10 @@
 import unittest
 from unittest.mock import patch
 
-from Models import StrategyGenome
-from Mutation import Mutation
-from GeneticAlgorithm import GeneticAlgorithm
-from FitnessEvaluator import FitnessEvaluator
+from GeneticAlgorithm.Version1.Models import StrategyGenome
+from GeneticAlgorithm.Version1.Mutation import Mutation
+from GeneticAlgorithm.Version1.GeneticAlgorithm import GeneticAlgorithm
+from GeneticAlgorithm.Version1.FitnessEvaluator import FitnessEvaluator
 
 
 class TestGeneticAlgorithm(unittest.TestCase):

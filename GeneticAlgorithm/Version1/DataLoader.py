@@ -1,6 +1,6 @@
 import csv
 
-from Models import Strategy, StrategyGenome
+from GeneticAlgorithm.Version1.Models import Strategy, StrategyGenome
 
 class DataLoader:
     @staticmethod

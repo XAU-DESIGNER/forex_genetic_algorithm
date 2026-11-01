@@ -1,8 +1,8 @@
-from Models import StrategyGenome, Strategy
-from TournamentSelection import TournamentSelection
-from Crossover import Crossover
-from Mutation import Mutation
-from FitnessEvaluator import FitnessEvaluator
+from GeneticAlgorithm.Version1.Models import StrategyGenome, Strategy
+from GeneticAlgorithm.Version1.TournamentSelection import TournamentSelection
+from GeneticAlgorithm.Version1.Crossover import Crossover
+from GeneticAlgorithm.Version1.Mutation import Mutation
+from GeneticAlgorithm.Version1.FitnessEvaluator import FitnessEvaluator
 
 
 class GeneticAlgorithm:

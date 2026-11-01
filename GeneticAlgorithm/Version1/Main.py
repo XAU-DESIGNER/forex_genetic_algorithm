@@ -1,7 +1,7 @@
-from DataLoader import DataLoader
-from PopulationInitializer import PopulationInitializer
-from FitnessEvaluator import FitnessEvaluator
-from GeneticAlgorithm import GeneticAlgorithm
+from GeneticAlgorithm.Version1.DataLoader import DataLoader
+from GeneticAlgorithm.Version1.PopulationInitializer import PopulationInitializer
+from GeneticAlgorithm.Version1.FitnessEvaluator import FitnessEvaluator
+from GeneticAlgorithm.Version1.GeneticAlgorithm import GeneticAlgorithm
 
 
 # Configuration
