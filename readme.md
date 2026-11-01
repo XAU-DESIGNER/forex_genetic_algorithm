@@ -3,7 +3,9 @@
 problem: find best parameters
 goal: repeat 5 times, return strategy with best score
 other:
-$$Genome=[fast\_ema,slow\_ema] \\[20pt] ROI=\frac{Outcome+Swap-Commission}{InitialBalance}\times100 \\[20pt] Fitness(Genome)= \begin{cases} \dfrac{ROI}{Drawdown} & fast<slow \land Drawdown>0\\[10pt] 0 & otherwise \end{cases} \\[15pt] Goal=\max_{Genome} Fitness(Genome)$$
+
+<img width="572" height="315" alt="image" src="https://github.com/user-attachments/assets/7e3556ec-1fc1-4fd2-96a3-c33e9dab63f4" />
+
 ## Phase 1: .NET API
 a c# web project that has
 ```
