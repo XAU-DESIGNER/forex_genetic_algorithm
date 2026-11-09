@@ -1,5 +1,5 @@
 # Forex genetic algorithm (strategy optimization)
-# Genetic Algorithm
+### Genetic Algorithm
 
 An educational project demonstrating Genetic Algorithms for trading strategy optimization using Python and .NET.
 
