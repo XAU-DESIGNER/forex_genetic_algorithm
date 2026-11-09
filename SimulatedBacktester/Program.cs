@@ -3,11 +3,14 @@ using SimulatedBacktester.Contracts;
 using SimulatedBacktester.Services;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddOpenApi();
+builder.Services.AddSingleton<Backtester>();
+
 var app = builder.Build();
 
 app.MapOpenApi();
 app.MapScalarApiReference();
-builder.Services.AddSingleton<Backtester>();
 
 app.MapGet("/", () => "backtest service is ready (simulated and nothing is real)");
 

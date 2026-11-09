@@ -1,102 +1,37 @@
 # Forex genetic algorithm (strategy optimization)
-## STILL IN PROGRESS
-problem: find best parameters
-goal: repeat 5 times, return strategy with best score
-other:
+# Genetic Algorithm
 
-<img width="572" height="315" alt="image" src="https://github.com/user-attachments/assets/7e3556ec-1fc1-4fd2-96a3-c33e9dab63f4" />
+An educational project demonstrating Genetic Algorithms for trading strategy optimization using Python and .NET.
 
-## Phase 1: .NET API
-a c# web project that has
-```
-http get /start
-```
+## Requirements
 
-returns randomlly:
-```json
-{
-	"Total_commission":1.2,
-	"Outcome":210.00,
-	"Initial_balance":1000.00,
-	"DrawDown":8.1,
-	"Profit_factor":1.5,
-	"Swap":-12.00
-}
+- .NET 10 SDK
+- Python 3
+- Python `requests` package
+
+## How to Run
+
+**Step 1: Start the .NET Backtester**
+
+Make sure .NET 10 SDK is installed.
+
+Open a terminal in the project root and run:
+
+```bash
+dotnet run --project SimulatedBacktester/SimulatedBacktester.csproj --urls http://localhost:5186
 ```
 
-## Phase 2: Genetic Algorithm
->For this example, I used Python as the primary programming language.
-### Algorithm
+Keep this terminal running.
 
-1. **Initialize Population**
-    
-    - Generate a random population of genomes.
-        
-    - Each genome contains two genes: `fast_ema` and `slow_ema`.
-        
-    - Ensure that `fast_ema < slow_ema`.
-        
-2. **Evaluate Fitness**
-    
-    - For each genome:
-        
-        - Send a GET request to the .NET API (`/start`).
-            
-        - Receive the backtest results.
-            
-        - Calculate ROI using the returned metrics.
-            
-        - Calculate the fitness score.
-            
-        - Assign a fitness score of `0` if the genome is invalid.
-            
-3. **Selection**
-    
-    - Select the fittest genomes from the current population.
-        
-    - Use them as parents for the next generation.
-        
-4. **Crossover**
-    
-    - Select two parents.
-        
-    - Combine their genes to create new offspring.
-        
-    - Ensure that the offspring satisfies the genome constraints.
-        
-5. **Mutation**
-    
-    - Randomly modify one or both genes with a predefined mutation probability.
-        
-    - Ensure that the mutated genome remains valid.
-        
-6. **Create Next Generation**
-    
-    - Combine selected parents and offspring to form the next population.
-        
-    - Preserve the best-performing genome using elitism.
-        
-7. **Repeat**
-    
-    - Repeat the evaluation and evolution process for 5 generations.
-        
-    - Track the best-performing genome across all generations.
-        
-8. **Return Result**
-    
-    - Return the genome with the highest fitness score found during the entire process.
-        
+**Step 2: Run the Python Application**
 
-### Final Output
+After the .NET Backtester has started successfully, open another terminal and run:
 
-The algorithm returns the best-performing strategy parameters:
+```bash
+pip install requests
+python3 GeneticAlgorithm/Main.py
+```
 
-- `fast_ema`
-    
-- `slow_ema`
-    
-- `fitness_score`
-    
-- `ROI`
-    
-- `Drawdown`
+The Python application communicates with the .NET Backtester API to evaluate genomes.
+
+**Important:** Always start the .NET project before running the Python application.

@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 
+
 @dataclass
 class Strategy:
     fast_ema: int
@@ -10,7 +11,8 @@ class Strategy:
     average_spread: float
     initial_balance: float
 
-@dataclass(frozen= True)
+
+@dataclass
 class StrategyGenome:
     fast_ema: int
     slow_ema: int
